@@ -1,0 +1,14 @@
+# Secrets and local config
+.env
+*.pem
+local.settings.json
+
+# Python and notebooks
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+
+# Data and extracts
+*.csv
+*.parquet
+data/

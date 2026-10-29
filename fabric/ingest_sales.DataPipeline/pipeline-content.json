@@ -1,0 +1,19 @@
+{
+  "properties": {
+    "activities": [
+      {
+        "name": "Run silver_clean",
+        "type": "TridentNotebook",
+        "dependsOn": [],
+        "policy": {
+          "timeout": "0.12:00:00",
+          "retry": 0
+        },
+        "typeProperties": {
+          "notebookId": "00000000-0000-0000-0000-00000000aa02",
+          "workspaceId": "00000000-0000-0000-0000-000000000000"
+        }
+      }
+    ]
+  }
+}
