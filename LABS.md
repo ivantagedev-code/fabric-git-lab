@@ -35,7 +35,7 @@ Manual: [Branching with Git](https://githubtraining.github.io/training-manual/#/
 
 1. Clone the repository: `git clone https://github.com/ryanpjbyrne/fabric-git-lab.git`, then `cd fabric-git-lab`.
 2. Look around: `git status` and `git log --oneline`.
-3. Create your own branch and switch to it: `git switch -c lab1/<your-name>`.
+3. Create your own branch and switch to it: `git switch -c add-notes-<YOURNAME>`.
 4. Confirm where you are: `git branch`.
 
 ## Lab 1b: edit, commit, push
@@ -44,11 +44,11 @@ Manual: [Working Locally](https://githubtraining.github.io/training-manual/#/06_
 
 Each person edits a different file, so nobody clashes yet.
 
-1. Create your own file: `docs/lab-notes/<your-name>.md`, with a line or two about what you want from the day.
+1. Create your own file: `docs/lab-notes/<YOURNAME>.md`, with one line on what you want from these two days.
 2. Check what changed: `git status`.
-3. Stage it: `git add docs/lab-notes/<your-name>.md`.
-4. Commit it: `git commit -m "Add <your-name> lab notes"`.
-5. Push your branch: `git push -u origin lab1/<your-name>`.
+3. Stage it: `git add docs/lab-notes/<YOURNAME>.md`.
+4. Commit it: `git commit -m "Add lab notes for <YOURNAME>"`.
+5. Push your branch: `git push -u origin add-notes-<YOURNAME>`.
 6. If the push is rejected for sign-in reasons, see the
    [Authentication Troubleshooting Guide](https://githubtraining.github.io/training-manual/#/app_authentication).
 
@@ -58,11 +58,11 @@ Manual: [Collaborating on Code](https://githubtraining.github.io/training-manual
 
 Work in pairs so everyone reviews and is reviewed.
 
-1. On GitHub, open a pull request from `lab1/<your-name>` into `main`. Write a short description of the change.
+1. On GitHub, open a pull request from `add-notes-<YOURNAME>` into `main`. Write a short description of the change.
 2. Review your partner's pull request. On the **Files changed** tab, add a line comment, then finish the review with Comment, Approve or Request changes.
 3. Respond to any comments on your own pull request.
 4. Agree a merge method with the group (merge commit or squash) and merge once it is approved.
-5. Delete the merged branch.
+5. Delete the branch on GitHub, then tidy up locally: `git switch main`, `git pull`, `git branch -d add-notes-<YOURNAME>`.
 
 ## Demo: protect main and add CODEOWNERS
 
@@ -79,22 +79,23 @@ Trainer-led. Use your own copy of the repository, not the shared one.
 
 Manual: [What is a merge conflict](https://githubtraining.github.io/training-manual/#/12a_what_is_a_merge_conflict), [Resolving merge conflicts](https://githubtraining.github.io/training-manual/#/12b_resolving_merge_conflicts)
 
-Two branches change the same lines of `fabric/silver_clean.Notebook/notebook-content.py`:
+Work in pairs: one of you is **A**, the other is **B**. You both change the same line, differently, so Git cannot merge them automatically.
 
-| Branch | Change |
-| --- | --- |
-| `edit-nb-A` | Strip spaces from postcodes |
-| `edit-nb-B` | Trim postcodes before upper-casing |
+1. Both: update `main` and make your own branch.
 
-1. Open a pull request for each branch into `main`.
-2. Merge the pull request for `edit-nb-A`.
-3. Open the pull request for `edit-nb-B`. GitHub now reports a conflict.
-4. Resolve it: on GitHub with **Resolve conflicts**, or locally with
-   `git switch edit-nb-B`, `git merge main`, edit the conflict markers (`<<<<<<<`, `=======`, `>>>>>>>`), then `git add`, `git commit` and `git push`.
-5. Agree what the combined result should be, then merge.
+   ```shell
+   git switch main
+   git pull
+   git switch -c edit-nb-<YOURNAME>
+   ```
 
-If you also want a feature branch to try the pull request flow on, `feature/log-row-count` adds a row count to the log with no conflict.
+2. Both: change the **same line** of `fabric/silver_clean.Notebook/notebook-content.py`, but make a different change each. For example, A strips spaces from postcodes and B trims postcodes before upper-casing. Commit and push your branch.
+3. A opens a pull request and merges it first.
+4. B opens a pull request. GitHub reports a conflict.
+5. B resolves it in the GitHub editor (**Resolve conflicts**) or in VS Code, keeping both intentions. Locally that is `git switch edit-nb-<YOURNAME>`, `git merge main`, edit the conflict markers (`<<<<<<<`, `=======`, `>>>>>>>`), then `git add`, `git commit` and `git push`.
+6. Commit, push, then merge.
 
+The branches `edit-nb-A`, `edit-nb-B` and `feature/log-row-count` already exist in this repository. They are used for the trainer's demo, so leave them alone.
 ## Revert a commit
 
 Manual: [Reverting Commits](https://githubtraining.github.io/training-manual/#/15_reverting_commits)
