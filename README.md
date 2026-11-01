@@ -11,7 +11,11 @@ This is a hand-built teaching sample, not an export from a live workspace.
 - `fabric/` : sample Lakehouse, notebook and data pipeline definitions
 - `docs/lab-notes/` : Lab 1 notes go here
 - `docs/example.ipynb` : a raw .ipynb, to compare with the readable notebook source
-- `.github/CODEOWNERS` : maps folders to reviewers
+- `sql/` : sample SQL for the silver and gold layers
+- `scripts/validate.py` : repository checks, run locally and on every pull request
+- `.github/` : CODEOWNERS (maps folders to reviewers), issue and pull request templates, and workflows (PR checks, CodeQL)
+- `CONTRIBUTING.md` / `SECURITY.md` : team conventions and security policy
+- `requirements.txt` : deliberately includes an old package version so Dependabot has something to flag
 - [LABS.md](LABS.md) : the exercises, with the matching training manual page for each
 
 ## Getting started

@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: GitHub Training Manual
+    url: https://githubtraining.github.io/training-manual/#/01_getting_ready_for_class
+    about: Background reading for the exercises in this repository

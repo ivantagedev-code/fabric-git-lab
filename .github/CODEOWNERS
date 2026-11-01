@@ -1,2 +1,4 @@
-# Replace with your team handle
-/fabric/   @ORG/data-team
+# Review ownership. Replace with your own team handles.
+/fabric/  @ryanpjbyrne
+/sql/     @ryanpjbyrne
+/docs/    @ryanpjbyrne

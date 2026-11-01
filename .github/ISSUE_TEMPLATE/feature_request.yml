@@ -1,0 +1,22 @@
+name: Feature request
+description: Suggest a change or new piece of work
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed approach
+  - type: textarea
+    id: done
+    attributes:
+      label: Definition of done
+      description: How will we know it is finished?
+      placeholder: |
+        - [ ] ...
+        - [ ] ...
