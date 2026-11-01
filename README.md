@@ -16,6 +16,7 @@ This is a hand-built teaching sample, not an export from a live workspace.
 - `.github/` : CODEOWNERS (maps folders to reviewers), issue and pull request templates, and workflows (PR checks, CodeQL)
 - `CONTRIBUTING.md` / `SECURITY.md` : team conventions and security policy
 - `requirements.txt` : deliberately includes an old package version so Dependabot has something to flag
+- [Project board](https://github.com/users/ryanpjbyrne/projects/2) : backlog with table, board and roadmap views
 - [LABS.md](LABS.md) : the exercises, with the matching training manual page for each
 
 ## Getting started
