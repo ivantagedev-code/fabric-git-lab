@@ -27,14 +27,7 @@ Related reading that has no lab in this repository:
 
 Manual: [Getting Ready for Class](https://githubtraining.github.io/training-manual/#/01_getting_ready_for_class), [Local Git Configs](https://githubtraining.github.io/training-manual/#/05_local_git_configs)
 
-1. Check you can sign in to GitHub and open this repository.
-2. Install Git and confirm it works: `git --version`.
-3. Set your identity (used on every commit you make):
-
-   ```shell
-   git config --global user.name "Your Name"
-   git config --global user.email "you@example.com"
-   ```
+Follow **Getting started** in the [README](README.md): GitHub account, Git, editor, and a test clone. Come back here once `git clone` works.
 
 ## Lab 1a: clone and branch
 
