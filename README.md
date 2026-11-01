@@ -22,7 +22,7 @@ Background reading: [Getting Ready for Class](https://githubtraining.github.io/t
 ### 1. GitHub account
 
 1. Make sure you can sign in to GitHub with the account you will use on the day.
-2. Make sure you can open this repository: `https://github.com/<OWNER>/fabric-git-lab`.
+2. Make sure you can open this repository: `https://github.com/ryanpjbyrne/fabric-git-lab`.
 3. If your account is managed by your organisation (for example an Enterprise Managed User account),
    it may not be able to contribute to repositories outside your organisation. Tell the trainer before the
    session if you can open the repository but cannot push or open a pull request.
@@ -53,7 +53,7 @@ Install from <https://cli.github.com>, then check with `gh --version`.
 Use HTTPS rather than SSH, because many corporate networks block SSH.
 
 ```shell
-git clone https://github.com/<OWNER>/fabric-git-lab.git
+git clone https://github.com/ryanpjbyrne/fabric-git-lab.git
 cd fabric-git-lab
 git status
 ```

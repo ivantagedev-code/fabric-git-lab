@@ -33,7 +33,7 @@ Follow **Getting started** in the [README](README.md): GitHub account, Git, edit
 
 Manual: [Branching with Git](https://githubtraining.github.io/training-manual/#/04_branching_with_git), [Working Locally](https://githubtraining.github.io/training-manual/#/06_working_locally)
 
-1. Clone the repository: `git clone <REPO-URL>`, then `cd fabric-git-lab`.
+1. Clone the repository: `git clone https://github.com/ryanpjbyrne/fabric-git-lab.git`, then `cd fabric-git-lab`.
 2. Look around: `git status` and `git log --oneline`.
 3. Create your own branch and switch to it: `git switch -c lab1/<your-name>`.
 4. Confirm where you are: `git branch`.
