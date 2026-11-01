@@ -12,3 +12,5 @@ This is a hand-built teaching sample, not an export from a live workspace.
 - `docs/lab-notes/` : Lab 1 notes go here
 - `docs/example.ipynb` : a raw .ipynb, to compare with the readable notebook source
 - `.github/CODEOWNERS` : maps folders to reviewers
+
+- [LABS.md](LABS.md) : the exercises, with the matching training manual page for each
